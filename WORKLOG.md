@@ -36,15 +36,15 @@
 
 ### 備考
 - データベースの作成
-    - 'psql -U postgres -d postgres -c "CREATE DATABASE board;"'
+    - `psql -U postgres -d postgres -c "CREATE DATABASE board;"`
 - データベースの接続
-    - 'psql -U postgres -d board'
+    - `psql -U postgres -d board`
 - データベースのネームとパスを環境変数で設定
-    - 'application.properties'には環境変数を設定
-    - 実際のネームとパスは'.env'に記載（ディレクトリは'pom.xml'と同じ場所）
-    - '.env'は'.gitignore'に含める
-- 初回localhostアクセス時に 'src/main/resources/templates/' ディレクトリが存在しないと、Thymeleafがテンプレートを見つけられず警告が出ます
-    - 'mkdir -p src/main/resources/templates'
+    - `application.properties`には環境変数を設定
+    - 実際のネームとパスは`.env`に記載（ディレクトリは`pom.xml`と同じ場所）
+    - `.env`は`.gitignore`に含める
+- 初回localhostアクセス時に `src/main/resources/templates/` ディレクトリが存在しないと、Thymeleafがテンプレートを見つけられず警告が出ます
+    - `mkdir -p src/main/resources/templates`
 
 - spring-boot-starter-webのが不足すると、Webサーバー（Tomcat）が起動しない
 
