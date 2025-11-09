@@ -48,10 +48,23 @@
 
 - spring-boot-starter-webのが不足すると、Webサーバー（Tomcat）が起動しない
 
+---
 
+---
 
+## 2025-11-08
 
+### 作業内容
+- Modalの作成 `Post.java`
+- Repositoryの作成 `PostRepository.java`
+- Serviceの作成 `PostService.java`
+- Contorollerの作成 `PostController.java`
 
+### 備考
+- .envファイルの配置場所：プロジェクトルート（pom.xmlと同じディレクトリ）
+- `BbsApplication.java`にアプリケーション起動時に.envファイルを読み込み、環境変数として設定するコードを追加します。
+
+---
 
 ---
 
