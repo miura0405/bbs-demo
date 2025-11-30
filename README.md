@@ -1,2 +1,2 @@
-# bbs-demo
-20251105
+# 起動コマンド
+mvn spring-boot:run -e

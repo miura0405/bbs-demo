@@ -18,12 +18,12 @@ public class Post {
   private LocalDateTime createdAt = LocalDateTime.now();
   private LocalDateTime updatedAt = LocalDateTime.now();
 
-  @prePersist
+  @PrePersist
   public void onCreate() {
     createdAt = LocalDateTime.now();
   }
 
-  @preUpdate
+  @PreUpdate
   public void onUpdate() {
     updatedAt = LocalDateTime.now();
   }

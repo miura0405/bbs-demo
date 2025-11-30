@@ -15,12 +15,45 @@
     />
   </head>
   <body>
-    <div class="container mt-4">
-      <div layout:fragment="content">
-        <p>これは掲示板のコンテンツです。</p>
-      </div>
-    </div>
+    <!-- Header -->
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" th:href="@{/posts}">掲示板アプリ</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" th:href="@{/posts}">投稿一覧</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" th:href="@{/posts/new}">新規投稿</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Main Content -->
+    <main class="container mt-4" layout:fragment="content"></main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center mt-4 py-3">
+      <p>&copy; 2025 掲示板アプリ</p>
+    </footer>
+
     <!-- bootstrapのJSを読み込み -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
   </body>
 </html>

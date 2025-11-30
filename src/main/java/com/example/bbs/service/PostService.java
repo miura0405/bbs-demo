@@ -15,4 +15,20 @@ public class PostService {
   public PostService(PostRepository postRepository) {
     this.postRepository = postRepository;
   }
+
+  public List<Post> findAll() {
+    return postRepository.findAll();
+  }
+
+  public Optional<Post> findById(Long id) {
+    return postRepository.findById(id);
+  }
+
+  public Post save(Post post) {
+    return postRepository.save(post);
+  }
+
+  public void deleteById(Long id) {
+    postRepository.deleteById(id);
+  }
 }
